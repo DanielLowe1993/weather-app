@@ -1,25 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import Classes from './App.module.scss';
+import React, { useState } from 'react';
+import LocationSelector from './components/LocationSelector';
 
 const App = () => {
+  const [activeLocation, setActiveLocation] = useState('London');
+
+  const handleLocationchange = (event) => {
+    setActiveLocation(event.target.value);
+  };
+
   return (
-    <div className={Classes.App}>
-      <header className={Classes['App-header']}>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LocationSelector activeLocation={activeLocation} handleLocationchange={handleLocationchange} />
   );
 }
 

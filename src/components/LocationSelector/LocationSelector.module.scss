@@ -1,0 +1,13 @@
+.location-holder {
+  padding: 20px;
+  display: flex;
+
+  .form-control {
+    width: 100%;
+
+    @media only screen and (min-width: 1000px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+}
