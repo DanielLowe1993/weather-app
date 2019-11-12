@@ -1,0 +1,26 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+  background: #e4e4e4;
+  box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+
+  h1 {
+    margin: 0 0 0.5em 0;
+  }
+
+  .weather-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1em;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+
+    p {
+      margin: 0;
+    }
+  }
+}
