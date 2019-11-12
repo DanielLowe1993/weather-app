@@ -12,7 +12,7 @@ const WeatherIcon = ({ icon }) => {
   }, [icon])
 
   return (
-    <canvas data-testid="weather-icon-canvas" className={Classes.icon} id="weather-icon" width="100" height="100"></canvas>
+    <canvas data-testid="weather-icon-canvas" className={Classes.icon} id="weather-icon" width="100" height="100" aria-label="Weather icon" role="img"></canvas>
   );
 };
 
