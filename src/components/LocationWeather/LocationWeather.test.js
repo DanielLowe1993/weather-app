@@ -25,7 +25,7 @@ it('shows error component when api errors', async () => {
   const activeLocation = 'London'
   axiosMock.get.mockResolvedValue();
 
-  const { getByTestId, debug } = render(
+  const { getByTestId } = render(
     <LocationWeather activeLocation={activeLocation} />
   );
 

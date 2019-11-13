@@ -29,7 +29,7 @@ const LocationWeather = ({ activeLocation }) => {
   }, [getLocationWeather]);
 
   return (
-    <div className={Classes.location}>
+    <div data-testid="location-weather" className={Classes.location}>
       <h1 data-testid="location-header">{activeLocation}</h1>
 
       {(weatherData && !loading && !error) && (

@@ -10,7 +10,7 @@ import Classes from './LocationSelector.module.scss';
 const LocationSelector = ({ activeLocation, handleLocationchange }) => {
 
   return (
-    <div className={Classes['location-holder']}>
+    <div data-testid="location-selector" className={Classes['location-holder']}>
       <FormControl variant="outlined" className={Classes['form-control']} data-testid="location-form-control">
         <InputLabel htmlFor="location-select">
           Location
